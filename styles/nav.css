@@ -1,0 +1,126 @@
+
+  nav{
+    background: var(--primary-color);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 3em;
+  }
+  
+  #logo{
+    width: 3.5em;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+  }
+
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: var(--font-white);
+    font-size: var(--body);
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  a.active,a:hover{
+    background: var(--pink-light);
+    transition: .5s;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: var(--font-white);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    justify-content: center;
+    background: var(--dark-grey);
+    color: var(--font-white);
+    padding: 2em;
+  }
+
+
+  .upper-content {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .upper-content div {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .upper-content ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+
+  .social-info ul li {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+
+  }
+
+  .social-info ul li i{
+    font-size: var(--h6-desktop);
+  }
+
+  .copyright-container p {
+      font-size: var(--small);
+    text-align: center;
+  }
+
+
+
+
+
+
+
+  @media (max-width: 858px){
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: var(--dark-grey);
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+
+    a:hover,a.active{
+      background: none;
+      color: var(--pink-light);
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }
+
+
