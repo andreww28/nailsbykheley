@@ -1,0 +1,22 @@
+/*
+.font-size: var(--body);>*/
+
+
+
+
+
+.about-container{
+    display: flex;
+
+
+}
+
+.content-container {
+    margin: 55px;
+}
+
+#wasd {
+    width:  350px;
+    margin: 0 100px;    
+
+}
